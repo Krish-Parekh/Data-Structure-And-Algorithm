@@ -26,7 +26,7 @@ public:
     Space Complexity : O(1)
 
     Explanation:
-    1. We will subtract ith element with target and store it in target
+    1. We will subtract ith element with target and store it in temp
     2. Then search temp in whole array from i+1 till n-1
     3. if we find that element we return i and j index
 
