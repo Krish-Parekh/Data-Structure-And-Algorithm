@@ -11,10 +11,13 @@
 ***************************************************************************************/
 
 #include <iostream>
+#include <vector>
+#include <algorithm>
 #define endl "\n"
 using namespace std;
 
 /*
+1.
 Brute-Force-Approach 
 Time Complexity  : O(N)
 Space Complexity : O(N)
@@ -55,13 +58,50 @@ void displayArray(int arr[], int size){
     cout << endl;
 }
 
+
+/*
+2.
+Optimized Approach using Vector
+Time Complexity  : O(N)
+Space Complexity : O(N)
+
+Explanation:
+1. We will pass vector of array and size of vector to a function called reverseArrayUsingVector().
+2. We will call in-built function reverse() and pass two parameter begin() and end(), that will reverse entire vector.
+3. Note: For Using Vector, We need to use <vector> library.
+         For Using Reverse Function, We need to use <algorithm> library.
+       
+*/
+
+void reverseArrayUsingVector(vector<int> *varr, int size){
+    reverse(varr->begin(), varr->end());
+}
+
+void displayArrayForVector(vector<int> varr, int size){
+    for (int i=0; i<size; i++){
+        cout << varr[i] << " ";
+    }
+    cout << endl;
+}
+
 int main()
 {
+    /*
+    //Sorting Using Array
     int arr[] = {10, 29, 37, 46, 58, 64, 76, 82, 94};
     int size = sizeof(arr)/sizeof(arr[0]);
     displayArray(arr, size);
     reverseArray(arr, size);
     displayArray(arr, size);
+    */
+
+
+    //Sorting Using Vector and In-built Function
+    vector<int> varr = {10, 29, 37, 46, 58, 64, 76, 82, 94};
+    int size = varr.size();
+    displayArrayForVector(varr, size);
+    reverseArrayUsingVector(&varr, size);
+    displayArrayForVector(varr, size);
 
     return 0;
 }
