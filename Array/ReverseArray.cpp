@@ -60,7 +60,6 @@ int main(){
     //Sorting Using Array
     int arr[] = {10, 29, 37, 46, 58, 64, 76, 82, 94};
     int size = sizeof(arr)/sizeof(arr[0]);
-    displayArray(arr, size);
     reverseArray(arr, size);
     displayArray(arr, size);
 }
