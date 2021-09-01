@@ -4,6 +4,9 @@
 * Given two arrays a[] and b[] of size n and m respectively, 
 * The task is to find intersection between these two arrays.
 *
+* Love Babber Sheet (Que-6).
+* Link: https://www.geeksforgeeks.org/find-union-and-intersection-of-two-unsorted-arrays/
+*
 * What is Intersection in array? = Only Same elements in both the array.
 *
 * Input: a[] = {85, 25, 1, 32, 54, 6}, n = 6, 

@@ -4,6 +4,9 @@
 * Given two arrays a[] and b[] of size n and m respectively, 
 * The task is to find union between these two arrays.
 *
+* Love Babber Sheet (Que-6).
+* Link: https://practice.geeksforgeeks.org/problems/union-of-two-arrays3538/1
+*
 * What is Union in array? = All the elements of both the array (without repeating).
 *
 * Input: a[] = {85, 25, 1, 32, 54, 6}, n = 6, 
