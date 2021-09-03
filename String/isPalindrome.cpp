@@ -74,7 +74,6 @@ public:
     3. By any chance, if both the elements are not same, then we will return 0.
     4. After Comparing elements, we will increase i pointer and decrease j pointer.
     5. If loop gets over without returning 0, then string is palindrome and we will return 1.
-
 */
 
 
