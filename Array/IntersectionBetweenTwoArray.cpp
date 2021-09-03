@@ -24,7 +24,7 @@ using namespace std;
 /*
 1.  Brute-Force-Approach
 
-    Time Complexity  : O(N*M)
+    Time Complexity  : O(N*lon N + M*log M)
     Space Complexity : O(N+M)
 
     Explanation:
