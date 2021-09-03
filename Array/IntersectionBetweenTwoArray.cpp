@@ -44,7 +44,6 @@ using namespace std;
     Note: We need to include <set> library to use its function.
        
 */
-
 void display(set<int> s){
     for(auto i=s.begin(); i!=s.end(); i++){
         cout << *i << " ";
