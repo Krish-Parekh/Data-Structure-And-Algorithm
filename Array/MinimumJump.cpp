@@ -38,22 +38,22 @@ using namespace std;
             in maxValue, We will store maximum value between previous max value and i+arr[i].
 
             Why i + arr[i]?
-            Because, we have to count from 0th index + total steps from current elements(value).
-            i shows previos steps + arr[i] is next steps.
+            Because, we have to count from 0th index + total steps from current element(value is total number of steps, that can be made forward).
+            i shows previos steps + arr[i] shows next possible steps.
 
             Suppose, arr[] = {1,2,3}
             i = 0, arr[i] = 1, 
                 maxValue = max(0, 0+1) = 1
-                maximum possible next stop can be 1(index) from 0(index)..
+                maximum possible next stop can be 1st(index) from 0th(index)..
 
             i = 1, arr[i] = 2
                 maxValue = max(1, 1+2) = 3
-                maximum possible next stop can be 3(index) from 0(index).
+                maximum possible next stop can be 3rd(index) from 0th(index).
             
         We will find max value till nextStop becomes equal to i.
         When nextStop and i becomes equal, 
             That means we are suppose to jump from that index with maximum possible value (Which was stored in maxValue).
-            After that, we will store maxValue into nextStop and increase jumps by one (Because one jump made at this point).
+            After that, we will store maxValue into nextStop and increase jumps by one (Because one jump will be made at this point).
             if nextStop becomes equal or more than size of array, then we will return jumps(which was counting jums)
         
     4. Return -1, if jumps never reach end of an array.
