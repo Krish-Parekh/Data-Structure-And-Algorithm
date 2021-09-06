@@ -1,33 +1,14 @@
+/*************************************************************************************** 
+* Given an integer array nums, return true if any value appears at least twice in the 
+* array, and return false if every element is distinct.
+***************************************************************************************/
+
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
 public:
-    bool containsDuplicate(vector<int>& nums) {
-        /*
-            Brute-Force Solution:
-            Time Complexity  : O(N^2)
-            Space Complexity : O(1)
-
-            Explanation:
-            Loop 1 -> To select ith element in array
-                Loop 2 -> To traverse whole element and find if nums[i] == nums[j] 
-        */
-
-        for(int i = 0 ; i < nums.size() ; i++)
-        {
-            for(int j = 0 ; j < nums.size() ; j++)
-            {
-                if(nums[i] == nums[j])
-                {
-                    return true;
-                }
-            }
-        }
-        return false;
-        
-        
-        
+    bool containsDuplicate(vector<int>& nums) {    
         /*
             Optimized Solution:
             Time Complexity  : O(N)
