@@ -87,11 +87,11 @@ int main()
     Explanation: 
     1) First of all, we will create a unordered map to store character and it's count.
 
-    2) We will run for loop to traverse entire string. While traversing, we will insert every character to map.
+    2) We will run for loop to traverse entire string. While traversing, we will insert every character to unordered map.
        If character already exist, than map will increase its count.
        Else, It will store character.
     
-    3) After that, we will run second for loop for dislaying elements, which exist more than 1 times in string using map count.
+    3) After that, we will run second for loop for dislaying elements, which exist more than 1 times in string using unordered map count.
 
     Debug:
     i)  In first for loop,
