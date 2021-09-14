@@ -35,10 +35,10 @@ using namespace std;
     2.  If size of array is even, then
         We will get median element and its next element.
         We will do addition of both the element and then divide by 2. 
-        That is the answer. So we will return the answer.
+        That is the answer.
 
     3.  If size of array is odd, then
-        We will by middle element and return it.
+        We will find middle element and return it.
 
     Debug:
     1.  v[] = {5, 3, 2, 4 ,1}

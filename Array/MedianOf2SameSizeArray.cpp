@@ -22,8 +22,8 @@ using namespace std;
 
 /*
     Solution :
-    Time Complexity : O(N)
-    Space Complexity : O(N)
+    Time Complexity : O(M)
+    Space Complexity : O(M)    ->M is size of array b[].
 
     Explanation: 
     1. First we need to merge both the arrays.
