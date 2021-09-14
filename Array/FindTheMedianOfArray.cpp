@@ -55,9 +55,7 @@ using namespace std;
         if(2/2 == 0)     -> True
             min = 1
             max = 2
-            return 15    -> ((11 + 19)/2 = 15)
-
-    
+            return 15    -> ((11 + 19)/2 = 15)    
 */
 
 class Solution
