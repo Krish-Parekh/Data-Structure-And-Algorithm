@@ -20,7 +20,7 @@ using namespace std;
 /*
     Solution :
     Time Complexity : O(N)
-    Space Complexity : O(1)    -> M is size of array b[].
+    Space Complexity : O(1)
 
     Explanation: 
     1.  We will traverse string using for loop.
