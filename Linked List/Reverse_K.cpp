@@ -1,5 +1,5 @@
 #include "BaseClass.cpp"
-node *reverseK(node * head , int k)
+node *reverseK(node *head, int k)
 {
     int count = 0;
     node *prevptr = NULL;
@@ -23,10 +23,11 @@ node *reverseK(node * head , int k)
 
 int main()
 {
-    node * head = takeInput();
+    node *head = takeInput();
     int kSize;
-    cout << "Enter Size of K : " << " ";
+    cout << "Enter Size of K : "
+         << " ";
     cin >> kSize;
-    node * res = reverseK(head,kSize);
+    node *res = reverseK(head, kSize);
     printLL(res);
 }
