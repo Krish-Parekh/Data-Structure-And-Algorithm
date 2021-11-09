@@ -13,7 +13,6 @@ node * moveLast(node * head)
     temp->next = head;
     head = temp;
     return temp;
-
 }
 
 int main()
