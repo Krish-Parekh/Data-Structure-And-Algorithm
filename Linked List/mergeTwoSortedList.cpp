@@ -27,7 +27,7 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  *
- 
+
 //Code Starts from here
 class Solution {
 public:
