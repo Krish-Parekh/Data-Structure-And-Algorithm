@@ -113,3 +113,42 @@ class Solution
         }
     }
 };
+
+
+/******************************************************************************************** 
+* 
+* Sort Colors (Leetcode Medium)
+*
+* Link: https://leetcode.com/problems/sort-colors/
+*
+* Input: nums = [2,0,2,1,1,0]
+* Output: [0,0,1,1,2,2]
+*          
+********************************************************************************************/
+
+class Solution {
+public:
+    void swap(int *a, int *b){
+        int temp = *a;
+        *a = *b;
+        *b = temp;
+    }
+    void sortColors(vector<int>& nums) {
+        int low = 0, mid = 0, high = nums.size()-1;
+        
+        while(mid <= high){
+            if(nums[mid] == 0){
+                swap(&nums[mid], &nums[low]);
+                low++;
+                mid++;
+            }
+            else if(nums[mid] == 2){
+                swap(&nums[mid], &nums[high]);
+                high--;
+            }
+            else{
+                mid++;
+            }
+        }
+    }
+};
