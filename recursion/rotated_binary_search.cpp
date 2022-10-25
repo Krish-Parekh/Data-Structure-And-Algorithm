@@ -37,7 +37,6 @@ int rotatedBinarySearch(int arr[], int start, int end, int target)
     return rotatedBinarySearch(arr, start, mid - 1, target);
     
 }
-
 int main()
 {
     int arr[] = {5, 4, 1, 2, 3};
